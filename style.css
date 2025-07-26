@@ -192,7 +192,7 @@ section {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.54);
     position: absolute;
     top: 60px;
     right: 20px;
