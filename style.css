@@ -1007,7 +1007,7 @@ color : #ffddb0;
     font-size: 14px;
   }
   body{
-    margin : 0px !important; 
+    margin : 0px 0.5rem;
   }
 }
 
