@@ -1,0 +1,1080 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  background-color: #fffdf5;
+}
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf5;
+} */
+
+header {
+  background-color: #f3e5ab;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+  margin: 0;
+  color: #4b2e1e;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4b2e1e;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d97706;
+}
+
+/* Hero Banner */
+
+
+
+
+
+.books-hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('mahabharat9.png'); /* Replace with your combined image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.books-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.3); /* Dim for readability */
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.books-hero .overlay h2 {
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.books-hero .overlay p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.books-hero .btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #ffe28a;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.books-hero .btn:hover {
+  background-color: #fbd34b;
+  transform: scale(1.05);
+}
+
+
+/* Spiritual Navbar Container */
+.mahabharat-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #3e1f0d, #5c2b16);
+  color: #ffe28a;
+  z-index: 1000;
+  padding: 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #a47c48;
+}
+
+/* Flex Container for Logo and Links */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ffddb0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+  position: relative;
+  padding: 5px 8px;
+}
+
+.nav-links a:hover {
+  color: #ffae42;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #ffae42;
+  width: 0%;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Scroll padding so sections are not hidden under fixed nav */
+section {
+  scroll-margin-top: 90px;
+}
+
+/* Toggle hidden checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.nav-toggle-label {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: calc(100% - 40px);
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+}
+
+
+
+.parichay-section {
+  padding: 100px 20px 60px;
+  background: linear-gradient(to bottom, #fef7e5, #fffaf0);
+  text-align: center;
+  color: #4b2e1e;
+  background-image: url("mahabharat2.avif");
+  background-size: cover;
+  animation: fadeIn 1s ease;
+}
+
+.parichay-container {
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.parichay-section h2 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.parichay-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d97706;
+  margin: 12px auto 0;
+}
+
+.hindi-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  color : #f1df7f;
+  animation: fadeIn 2s ease;
+}
+
+.english-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #f1df7f;
+  animation: fadeIn 2s ease;
+}
+
+.quote-box {
+  background: #fff5d1;
+  border-left: 5px solid #d97706;
+  padding: 15px 20px;
+  display: inline-block;
+  text-align: left;
+  font-style: italic;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  animation: fadeIn 2s ease;
+}
+
+
+.quote-box .shloka {
+  font-size: 1.3rem;
+  color: #8b4513;
+  font-family: 'Noto Serif Devanagari', serif;
+  animation: fadeIn 2s ease;
+}
+
+
+.quote-box .meaning {
+  font-size: 1rem;
+  color: #555;
+  animation: fadeIn 2s ease;
+}
+
+
+
+.chapters-section {
+  padding: 50px 20px;
+  background-color: #feedc9;
+  text-align: center;
+}
+.chapters-section h2 {
+  font-size: 2.1rem;
+  color: #6a3d0c;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
+.chapters-section h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #d97706;
+  display: block;
+  margin: 10px auto 0;
+}
+.chapters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+.chapter-card {
+  background-color: #fdf5dc;
+  border-left: 5px solid #d97706;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+   animation: fadeIn 2s ease;
+}
+.chapter-card:hover {
+  transform: translateY(-5px);
+  background-color: #fff0c9;
+}
+.chapter-card h3 {
+  color: #4b2e1e;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+.chapter-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mahabharat-videos {
+  padding: 80px 20px;
+  background-color: #fef7e5;
+  text-align: center;
+}
+
+.mahabharat-videos h2 {
+  font-size: 2.1rem;
+  font-family: 'Playfair Display', serif;
+  color: #6a3d0c;
+  margin-bottom: 40px;
+  position: relative;
+}
+.mahabharat-videos h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #d97706;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.video-card {
+  background-color: #fffaf0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-family: 'Playfair Display', serif;
+  color: #4b2e1e;
+}
+
+
+
+  .shloka-temple-panel {
+  background:  #fff9eb;;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #6a3d0c;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2,1fr); */
+  /* margin : 0px 5rem; */
+}
+
+.shloka-temple-panel h2 {
+  font-size: 2.1rem;
+  margin-bottom: 40px;
+  color: #6a3d0c;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.shloka-block {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 750px;
+  margin: 30px auto;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.shloka-block:hover {
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.shloka-icon {
+  font-size: 2.2rem;
+  color: #ffd700;
+  margin-bottom: 12px;
+}
+
+.shloka-sanskrit {
+  font-size: 1.5rem;
+  color: #6a3d0c;
+  margin: 15px 0;
+  font-family: 'Noto Serif Devanagari', serif;
+  line-height: 1.6;
+}
+
+.shloka-meaning-hindi, .shloka-meaning-english {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  font-style: italic;
+}
+
+.shloka-source {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #6a3d0c;
+}
+
+.shloka-links {
+  background : #fff9eb;
+  color:#6a3d0c;
+  padding: 1px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  /* margin: 0px 5rem; */
+}
+
+.shloka-links h2 {
+  font-size: 1.5rem;
+  color:#6a3d0c;
+  margin-bottom: 20px;
+}
+
+.shloka-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shloka-links li {
+  margin: 12px 0;
+}
+
+.shloka-links a {
+  color: #6a3d0c;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.shloka-links a:hover {
+  color: #6a3d0c;
+}
+
+
+.read-title {
+  font-size: 2rem;
+  color:  #fef7e5;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif;
+}
+
+.read-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.read-section {
+  background: #fef7e5;;
+  padding: 60px 20px;
+  color: #4b3621;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.read-title {
+  font-size: 2rem;
+  color: #b8860b;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.read-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.read-card {
+  background: #fffaf0;
+  border: 1px solid #e2d3b3;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(184, 134, 11, 0.1);
+}
+
+.read-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(184, 134, 11, 0.2);
+}
+
+.read-card h3 {
+  color: #a87f1e;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.read-card p {
+  font-size: 0.95rem;
+  color: #5a4632;
+}
+
+.read-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+  background: #b8860b;
+  padding: 7px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.read-link:hover {
+  background: #a0760d;
+}
+
+
+.site-footer {
+  background: #eed2ae;
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: #f3cba3;
+  font-family: 'Georgia', serif;
+  border-top: 2px solid #e2d3b3;
+  /* margin-top: 60px; */
+}
+
+.footer-top h3 {
+  color: #a87f1e;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-top p {
+  font-size: 1rem;
+  margin: 0 auto 20px;
+  max-width: 600px;
+  color: #6b4e2e;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #a87f1e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #fcedc7;
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
+  color: #6b4e2e;
+    margin-top: 15px;
+}
+@media (min-width:1200px) {
+    .mahahbharat-body{
+      margin : 0px  2rem;
+    }  
+
+} 
+
+
+@media (max-width : 500px) {
+  .parichay-section{
+    margin-top: -5rem;
+  }
+  .nav-logo{
+    font-size: 16px;
+  }
+  .parichay-container h2{
+    font-size: 18px;
+  }
+  .hindi-text{
+    font-size: 16px;
+  }
+  .english-text{
+    font-size: 16px;
+  }
+  .quote-box{
+    display: none;
+  }
+  .chapters-section{
+    padding: none;
+    padding : 20px 20px;
+    }
+    .chapters-section h2{
+      font-size: 18px;
+    }
+    .mahabharat-videos h2{
+      font-size: 18px;
+    }
+    .mahabharat-videos{
+      padding : 25px 20px;
+    }
+    .shloka-temple-panel{
+      padding: 40px 20px;
+      margin-right : 0px;
+      margin-left: 0px;
+    }
+    .shloka-temple-panel h2{
+      font-size: 24px;
+    }
+    .read-section h2{
+      font-size: 18px;
+    }
+
+    
+    .chapter-card h2{
+      font-size: 18px;
+    }
+    .chapter-card p{
+      font-size: 8px;
+    }
+    .video-card h3{
+      font-size: 1rem;
+    }
+    .shloka-sanskrit{
+      font-size: 15px;
+      padding: 8px;
+    }
+    .shloka-icon{
+      font-size: 1.1rem;
+    }
+    .shloka-meaning-hindi{
+      font-size: 15px;
+    }
+    .shloka-meaning-english{
+      font-size: 15px;
+    }
+    .chapter-card h3{
+      font-size: 14px;
+    }
+    .chapter-card{
+      padding: 10px;
+    }
+    .read-section{
+      display: none;
+    }
+    .footer-links{
+      display: none;
+    }
+    .footer-top h3{
+      font-size: 14px;
+    }
+    .footer-top p{
+      display: none;
+    }
+    .footer-bottom p{
+      font-size: 10px;
+    }
+    .shloka-links h2{
+      font-size: 12px;
+    }
+    .shloka-links a{
+      font-size: 12px;
+    }
+    .shloka-block{
+      padding : 10px;
+    }
+    .mahabharat-videos .responsive{
+      display: none;
+    }
+    .shloka-temple-panel h2{
+      font-size: 18px;
+    }
+    .card1{
+      background-image: url("krishna\ ji.jpg");
+      background-size: cover;
+    }
+    .card2{
+      background-image: url("card3.jpg");
+      background-size: cover;
+    }
+    .card3{
+     background-image: url("mahabharat2.avif");
+     background-size: cover;
+    }
+    .shloka-block p{
+      color : #d0bd5a;
+      font-weight: 550;
+    }
+    .shloka-block span{
+      color : #d0bd5a;
+    }
+    .card3 p{
+      color : #f6d111;
+    }
+    .card2 p{
+      color : #ebd043;
+    }
+    .shloka-links{
+      margin-right : 0px;
+      margin-left: 0px;
+    }
+    .chapter-detail h2{
+      font-size: 20px;
+    }
+    .chapter-title{
+      font-size: 20px;
+    }
+    .chapter-section{
+      padding : 8px;
+      line-height: 0;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+.chapter-detail {
+  padding: 60px 20px;
+  background-color: #fffdf9;
+  color: #222;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  animation : fadeIn 0.9s ease;
+}
+
+.chapter-detail h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.chapter-detail p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.chapter-detail ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.chapter-detail h3 {
+  margin-top: 30px;
+  color: #444;
+}
+
+.chapter-detail blockquote {
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  border-left: 5px solid #d3a625;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+
+.chapter-detail {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #222;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chapter-detail h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.chapter-detail p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.chapter-detail ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.chapter-detail h3 {
+  margin-top: 30px;
+  color: #444;
+}
+
+.chapter-detail blockquote {
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  border-left: 5px solid #d3a625;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.chapter-section {
+  background-color: #fdfdf5;
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Mukti Narrow', sans-serif;
+  line-height: 1.8;
+  color: #4a3e30;
+}
+
+.chapter-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8e3e1f;
+  font-weight: bold;
+}
+
+.closing-quote {
+  margin-top: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #5c4225;
+}
+
+@media (max-width : 500px) {
+  
+
+    .chapter-section{
+      padding : 2px;
+      line-height: 0;
+      /* background-color: #feedc9 !important; */
+    }
+    /* .chapters-section{
+      width: 100%;
+      padding: 10px;
+    }
+   */
+   .chapter-detail{
+    padding-top : 29px;
+    padding-left: 0;
+    padding-right: 0;
+   }
+  
+   .siksha{
+    display : none;
+   }
+}
+@media (min-width : 500px) {
+  .siksha2{
+    display: none;
+  }
+  
+}
+
+.language-switcher {
+    margin-bottom: 15px;
+    text-align: right;
+  }
+
+  #languageSelector {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    background: linear-gradient(to right, #3e1f0d, #5c2b16);
+    cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+color : #ffddb0; 
+      
+  }
+
+   #languageSelector:hover{
+         box-shadow: 0px 0px 17px  linear-gradient(to right, #3e1f0d, #5c2b16);
+         font-size: 16.2px;
+         background-color:   #fffefc; 
+         color :  #f5a338; 
+    }
+
+
+  @media (max-width: 500px) {
+    .language-switcher label{
+      display: none;
+    }
+    #languageSelector{
+      padding: 2px;
+      font-size: 13px;
+    }
+    #languageSelector{
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+       font-size: 15px;
+       background-color: rgba(0,0,0,0.1);
+      position: fixed;
+  top: 12px;
+  right: 20px;
+  background: linear-gradient(to right, #3e1f0d, #5c2b16);
+  border: 1px solid #deb887;
+  padding: 2px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Mukta', sans-serif;
+  box-shadow: 0 2px 6px rgba(222, 184, 135, 0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+    }
+    
+  }
+@media (max-width:500px) {
+  .chapter-title h2{
+    font-size: 16px !important;
+  }
+  .chapter-detail h2{
+    font-size: 16px !important;
+  }
+  .chapter-detail p{
+    font-size: 14px;
+  }
+  .chapter-detail h3{
+    font-size : 14.5px
+  }
+  strong{
+    font-size : 14px;
+  }
+  .siksha2 h3{
+    font-size : 14.5px;
+  }
+  .siksha2 h4{
+    font-size : 14.5px;
+  }
+  ul li{
+    font-size: 14px;
+  }
+  body{
+    margin : 0px !important; 
+  }
+}
+
+@media (max-width : 363px) 
+{
+   .chapter-title h2{
+    font-size: 14px !important;
+  }
+  .chapter-detail h2{
+    font-size: 14px !important;
+  }
+  .chapter-detail p{
+    font-size: 12px;
+  }
+  .chapter-detail h3{
+    font-size : 12.5px
+  }
+  strong{
+    font-size : 12px;
+  }
+  .siksha2 h3{
+    font-size : 12.5px;
+  }
+  .siksha2 h4{
+    font-size : 12.5px;
+  }
+  ul li{
+    font-size: 12px;
+  }
+  .chapter-detail ul li{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width : 266px) {
+  .chapter-title h2{
+    font-size: 9px !important;
+  }
+  .chapter-detail h2{
+    font-size: 9px !important;
+  } .chapter-detail h3{
+    font-size : 10px
+  }.chapter-detail h4{
+    font-size : 8px;
+    font-weight : normal;
+  }
+  .chapter-detail blockquote{
+      font-size: 7px;
+  }
+  .chapter-detail ul li{
+    font-size: 9px;
+  }
+}
+@media (max-width : 200px){
+  .chapter-detail h3{
+     font-size: 8px;
+  }
+  .chapter-detail h4{
+    font-size : 8px;
+    font-weight : normal;
+  }
+}
+shloka-links li a:active{
+    color : black !important;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
